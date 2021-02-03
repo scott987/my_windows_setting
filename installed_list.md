@@ -1,3 +1,8 @@
 - [PS 7](https://github.com/PowerShell/PowerShell/tags)
 - [MesloLGM font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Meslo/M/Regular/complete)
 - [vscode](https://code.visualstudio.com/)
+- [git](https://git-scm.com/downloads)
+- posh
+  - Install-Module posh-git -Scope CurrentUser
+  - Install-Module oh-my-posh -Scope CurrentUser
+  - Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser

@@ -1,0 +1,66 @@
+{
+    "copyOnSelect": false,
+
+    "profiles":
+    {
+        "defaults":
+        {
+            "fontFace": "MesloLGM Nerd Font Mono"
+        },
+        "list":
+        [
+            {
+                // Make changes here to the powershell.exe profile.
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile.
+                "name": "命令提示字元",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            }
+        ]
+    },
+
+    "keybindings":
+    [
+        { "command": "newTab", "keys": "ctrl+t" },
+        { "command": { "action": "newTab", "index": 4 }, "keys": "alt+shift+t" },
+        { "command": "prevTab", "keys": "alt+shift+[" },
+        { "command": "nextTab", "keys": "alt+shift+]" },
+
+        { "command": { "action": "switchToTab", "index": 0 }, "keys": "alt+1" },
+        { "command": { "action": "switchToTab", "index": 1 }, "keys": "alt+2" },
+        { "command": { "action": "switchToTab", "index": 2 }, "keys": "alt+3" },
+        { "command": { "action": "switchToTab", "index": 3 }, "keys": "alt+4" },
+        { "command": { "action": "switchToTab", "index": 4 }, "keys": "alt+5" },
+        { "command": { "action": "switchToTab", "index": 5 }, "keys": "alt+6" },
+        { "command": { "action": "switchToTab", "index": 6 }, "keys": "alt+7" },
+        { "command": { "action": "switchToTab", "index": 7 }, "keys": "alt+8" },
+        { "command": { "action": "switchToTab", "index": 8 }, "keys": "alt+9" },
+        { "command": { "action": "switchToTab", "index": 9 }, "keys": "alt+0" },
+        { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
+        { "command": "paste", "keys": "ctrl+v" },
+
+        { "command": "find", "keys": "alt+shift+f" },
+
+         { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
+    ]
+}
